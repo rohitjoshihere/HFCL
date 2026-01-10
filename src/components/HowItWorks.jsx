@@ -35,10 +35,8 @@ const HowItWorks = () => {
                         ))}
                     </div>
                     <div className="visual-area">
-                        <div className="placeholder-visual">
                             {/* Image placeholder */}
                             <img src="/assets/bg2.jpg" alt="DCI Visualization" />
-                        </div>
                     </div>
                 </div>
             </div>

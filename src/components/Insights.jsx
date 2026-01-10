@@ -56,7 +56,7 @@ const Insights = () => {
 
                     <div className="insights-image">
                         <div className="cable-viz-placeholder">
-                            <img src={currentSlide.image} alt={currentSlide.alt} key={currentIndex} />
+                            <img src={currentSlide.image} alt={currentSlide.alt} key={currentIndex} loading="lazy" />
                         </div>
                     </div>
                 </div>

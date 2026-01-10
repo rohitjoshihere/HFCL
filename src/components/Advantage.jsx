@@ -15,9 +15,9 @@ const Advantage = () => {
                         <br />
                         That's our Data Center Interconnect (DCI) Solutions Advantage.
                     </p>
-                    <button className="btn-orange">
+                    <a target="_blank" href="https://www.hfcl.com/contact-us" className="btn-orange">
                         Schedule a meeting <ArrowRight size={18} />
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import heroImage from '../assets/hero.jpg'; // I'll copy the generated image to this location
+import heroImage from '/assets/hero.jpg'; // I'll copy the generated image to this location
 
 const Hero = () => {
     return (

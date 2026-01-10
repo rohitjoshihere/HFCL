@@ -39,7 +39,7 @@
 }
 
 .portfolio-image img {
-    max-width: 100%;
+    width: 100%;
     height: 99%;
     border-radius: 4px;
 }
@@ -72,11 +72,16 @@
 
 .ordering-guide-btn {
     padding: 1rem 2.5rem;
+    font-weight: 500;
 }
 
 @media (max-width: 1024px) {
     .portfolio {
-        padding: 5rem 1.5rem;
+        padding: 5rem 0rem;
+    }
+
+    .portfolio-title {
+        padding: 0rem 1.5rem;
     }
 
     .portfolio-grid {
@@ -98,6 +103,11 @@
     .portfolio-image {
         width: 100%;
         height: 200px;
+    }
+
+    .portfolio-image img {
+        width: 90%;
+        height: 90%;
     }
 
     .portfolio-info {
