@@ -82,14 +82,50 @@
     color: #1A1A1A;
 }
 
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    color: var(--text-dark);
+}
+
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 2rem;
     }
+
+    .navbar-side {
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 900px) {
+    .mobile-toggle {
+        display: block;
+    }
+
     .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
         display: none;
+    }
+
+    .nav-links.mobile-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f0f0f0;
+        color: #333 !important;
     }
 }

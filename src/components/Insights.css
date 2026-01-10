@@ -12,7 +12,7 @@
 
 .insights-feature-card {
     display: flex;
-background: linear-gradient(85.14deg, #1F094B 0%, #3B0F95 100%);
+    background: linear-gradient(85.14deg, #1F094B 0%, #3B0F95 100%);
     /* Darker, richer purple for this section */
     /* border-radius: 4px; */
     overflow: hidden;
@@ -124,11 +124,38 @@ background: linear-gradient(85.14deg, #1F094B 0%, #3B0F95 100%);
 }
 
 @media (max-width: 1024px) {
+    .insights {
+        padding: 5rem 1.5rem;
+    }
+
     .insights-feature-card {
         flex-direction: column;
     }
 
     .insights-content {
         padding: 2.5rem;
+    }
+
+    .insights-content h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .insights-content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .insights-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .insights-content p {
+        font-size: 0.95rem;
+    }
+
+    .insights-image {
+        min-height: 250px;
     }
 }

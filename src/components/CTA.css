@@ -1,6 +1,6 @@
 .cta-section {
     padding: 6rem 2rem;
-background: linear-gradient(85.14deg, #F7E4FD 0%, #FFEBD9 100%);
+    background: linear-gradient(85.14deg, #F7E4FD 0%, #FFEBD9 100%);
     text-align: left;
 }
 
@@ -36,7 +36,7 @@ background: linear-gradient(85.14deg, #F7E4FD 0%, #FFEBD9 100%);
     cursor: pointer;
     transition: transform 0.3s;
     overflow: hidden;
-    padding:8px 12px;
+    padding: 8px 12px;
 }
 
 .cta-btn:hover {
@@ -60,7 +60,15 @@ background: linear-gradient(85.14deg, #F7E4FD 0%, #FFEBD9 100%);
 
 
 @media (max-width: 768px) {
+    .cta-section {
+        padding: 5rem 1.5rem;
+    }
+
     .cta-content h2 {
         font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1.1rem;
     }
 }

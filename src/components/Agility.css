@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 1024px) {
+    .agility {
+        padding: 5rem 1.5rem;
+    }
+
     .agility-grid {
         grid-template-columns: 1fr;
     }
@@ -67,5 +71,20 @@
 @media (max-width: 768px) {
     .agility-card {
         flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .agility-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .agility-info {
+        width: 100%;
+    }
+
+    .agility-title {
+        font-size: 1.75rem;
     }
 }
