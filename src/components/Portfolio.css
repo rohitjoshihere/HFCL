@@ -77,12 +77,9 @@
 
 @media (max-width: 1024px) {
     .portfolio {
-        padding: 5rem 0rem;
+        padding: 5rem 1.5rem;
     }
 
-    .portfolio-title {
-        padding: 0rem 1.5rem;
-    }
 
     .portfolio-grid {
         grid-template-columns: 1fr;
