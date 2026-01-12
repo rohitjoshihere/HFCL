@@ -7,3 +7,16 @@
 main {
   flex: 1;
 }
+
+.animate-arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn :hover .animate-arrow {
+    transform: translateX(5px);
+}
+
+.cta-btns:hover {
+    transform: translateY(-2px);
+}

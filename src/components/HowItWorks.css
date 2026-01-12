@@ -24,7 +24,15 @@
 .step-card {
     padding: 2rem;
     border: 1px solid #DAD8E3;
-    /* border-radius: 8px; */
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    border: 1px solid #c4c3c7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+    cursor: pointer;
+    scale: 1.05;
 }
 
 .step-card h3 {

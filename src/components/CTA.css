@@ -36,7 +36,10 @@
     cursor: pointer;
     transition: transform 0.3s;
     overflow: hidden;
-    padding: 8px 12px;
+
+    padding: 0.75rem 1.5rem;
+    /* padding: 8px 12px; */
+    gap: 12px;
 }
 
 .cta-btn:hover {
@@ -44,9 +47,18 @@
 }
 
 .cta-btn-text {
-    padding: 0.75rem 1.5rem;
     font-size: 1rem;
 }
+.animate-arrow {
+   display: flex;
+   transition: transform 0.3s ease;
+}
+
+.cta-btn:hover .animate-arrow {
+   transform: translateX(5px);
+}
+
+
 
 .cta-btn-icon {
     background-color: var(--primary-orange);
