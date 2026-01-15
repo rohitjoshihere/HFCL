@@ -29,26 +29,40 @@ const Navbar = () => {
 
                     <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
                         <li>
+                            About Us <ChevronDown size={16} />
+                        </li>
+                        <li>
                             Products <ChevronDown size={16} />
                         </li>
                         <li>
-                            Solutions <ChevronDown size={16} />
+                            Network Solutions
+                        </li>
+                        <li>
+                            Investors
                         </li>
                         <li>
                             Insights <ChevronDown size={16} />
                         </li>
                         <li>
-                            Company <ChevronDown size={16} />
+                            Careers
+                        </li>
+                        <li>
+                            Contact Us
                         </li>
                     </ul>
                 </div>
 
                 <div className="nav-actions">
-                    <Search size={20} className="search-icon" />
                     <div className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </div>
                 </div>
+                <span className='hidden md:block'>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.319 15.9075C19.7628 12.769 19.542 8.22834 16.6569 5.34316C13.5327 2.21896 8.46734 2.21896 5.34315 5.34316C2.21895 8.46735 2.21895 13.5327 5.34315 16.6569C8.22833 19.542 12.769 19.7628 15.9075 17.319C15.921 17.3343 15.9351 17.3493 15.9497 17.364L20.1924 21.6066C20.5829 21.9971 21.2161 21.9971 21.6066 21.6066C21.9971 21.2161 21.9971 20.5829 21.6066 20.1924L17.364 15.9498C17.3493 15.9351 17.3343 15.921 17.319 15.9075ZM15.2426 6.75737C17.5858 9.10052 17.5858 12.8995 15.2426 15.2427C12.8995 17.5858 9.1005 17.5858 6.75736 15.2427C4.41421 12.8995 4.41421 9.10052 6.75736 6.75737C9.1005 4.41423 12.8995 4.41423 15.2426 6.75737Z" fill="#141414" />
+                </svg>
+                </span>
+
             </div>
         </nav>
     );

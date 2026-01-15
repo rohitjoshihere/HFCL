@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import './Portfolio.css';
+import ScrollReveal from './ScrollReveal';
 
 const Portfolio = () => {
     const items = [
@@ -26,13 +28,44 @@ const Portfolio = () => {
         }
     ];
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.7,
+                ease: [0.21, 0.47, 0.32, 0.98]
+            }
+        }
+    };
+
     return (
         <section className="portfolio">
             <div className="section-container">
-                <h2 className="portfolio-title">Explore HFCL's End-to-End DCI Portfolio</h2>
-                <div className="portfolio-grid">
+                <ScrollReveal>
+                    <h2 className="portfolio-title">Explore HFCL's End-to-End DCI Portfolio</h2>
+                </ScrollReveal>
+
+                <motion.div
+                    className="portfolio-grid"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
                     {items.map((item, i) => (
-                        <div key={i} className="portfolio-card">
+                        <motion.div key={i} className="portfolio-card" variants={cardVariants}>
                             <div className="portfolio-image">
                                 <img src={item.img} alt={item.title} />
                             </div>
@@ -43,9 +76,9 @@ const Portfolio = () => {
                                     <ArrowRight size={20} />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
                 <a target="_blank" href="https://www.hfcl.com/contact-us" className="btn-orange ordering-guide-btn">
                     Ordering Guide
                     <span className='animate-arrow'>

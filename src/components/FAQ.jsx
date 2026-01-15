@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
-import { ChevronUp, ChevronDown } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 import './FAQ.css';
+import ScrollReveal from './ScrollReveal';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
         <div className={`faq-item ${isOpen ? 'open' : ''}`}>
-            <div className="faq-question" onClick={onClick}>
-                <h3>{question}</h3>
-                {isOpen ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
-            </div>
-            <div className="faq-answer">
-                <p>{answer}</p>
+            <div className="faq-content-wrapper" onClick={onClick}>
+                <div className="faq-question">
+                    <h3>{question}</h3>
+                    <div className="faq-icon">
+                        {isOpen ? <Minus size={24} strokeWidth={1} /> : <Plus size={24} strokeWidth={1} />}
+                    </div>
+                </div>
+                <div className="faq-answer">
+                    <p>{answer}</p>
+                </div>
             </div>
         </div>
     );
 };
 
 const FAQ = () => {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(-1);
 
     const faqs = [
         {
@@ -41,17 +46,27 @@ const FAQ = () => {
     return (
         <section className="faq-section">
             <div className="section-container">
-                <h2 className="faq-title">FAQs</h2>
-                <div className="faq-list">
-                    {faqs.map((faq, index) => (
-                        <FAQItem
-                            key={index}
-                            question={faq.question}
-                            answer={faq.answer}
-                            isOpen={openIndex === index}
-                            onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                        />
-                    ))}
+                <div className="faq-grid">
+                    <div className="faq-left">
+                        <ScrollReveal direction="right">
+                            <h2 className="faq-title">FAQ</h2>
+                        </ScrollReveal>
+                    </div>
+                    <div className="faq-right">
+                        <ScrollReveal delay={0.2}>
+                            <div className="faq-list">
+                                {faqs.map((faq, index) => (
+                                    <FAQItem
+                                        key={index}
+                                        question={faq.question}
+                                        answer={faq.answer}
+                                        isOpen={openIndex === index}
+                                        onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+                                    />
+                                ))}
+                            </div>
+                        </ScrollReveal>
+                    </div>
                 </div>
             </div>
         </section>

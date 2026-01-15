@@ -1,13 +1,33 @@
 .faq-section {
-    padding: 6rem 2rem;
+    padding: 100px 2rem;
     background-color: white;
 }
 
+.faq-section .section-container {
+
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.faq-grid {
+    display: flex;
+    gap: 100px;
+}
+
+.faq-left {
+    flex: 0 0 250px;
+}
+
 .faq-title {
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
+    font-size: 48px;
     font-weight: 500;
-    color: var(--text-dark);
+    margin: 0;
+    color: #141414;
+    letter-spacing: -1px;
+}
+
+.faq-right {
+    flex: 1;
 }
 
 .faq-list {
@@ -16,68 +36,97 @@
 }
 
 .faq-item {
-    border-bottom: 1px solid #EEEEEE;
-    overflow: hidden;
+    border-bottom: 1px solid #E5E5E5;
     transition: all 0.3s ease;
 }
 
+.faq-content-wrapper {
+    cursor: pointer;
+}
+
 .faq-question {
-    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    gap: 2rem;
+    padding: 40px 0;
+    gap: 3rem;
 }
 
 .faq-question h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    color: #141414;
     line-height: 1.4;
     margin: 0;
+    transition: color 0.3s ease;
 }
 
-.faq-question svg {
-    color: #333;
+.faq-icon {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141414;
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-item.open .faq-answer {
-    max-height: 1000px;
-    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    max-height: 800px;
+    padding-bottom: 40px;
 }
 
 .faq-answer p {
-    padding-bottom: 2.5rem;
-    font-size: 1.05rem;
+    font-size: 18px;
     line-height: 1.7;
-    color: #666;
-    max-width: 1000px;
+    color: #444;
+    max-width: 90%;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .faq-grid {
+        gap: 50px;
+    }
+
+    .faq-left {
+        flex: 0 0 150px;
+    }
+
+    .faq-title {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) {
     .faq-section {
-        padding: 5rem 1.5rem;
+        padding: 60px 1.5rem;
     }
 
-    .faq-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+    .faq-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .faq-left {
+        flex: none;
     }
 
     .faq-question {
-        padding: 1.5rem 0;
-        gap: 1rem;
+        padding: 25px 0;
     }
 
     .faq-question h3 {
-        font-size: 1.1rem;
+        font-size: 18px;
+    }
+
+    .faq-item.open .faq-answer {
+        padding-bottom: 25px;
     }
 }

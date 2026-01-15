@@ -1,133 +1,82 @@
 import React from 'react';
-import { Linkedin, Instagram, Facebook, Youtube, Twitter, ArrowRight } from 'lucide-react';
+import { Linkedin, Instagram, Facebook, Youtube, Twitter } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="footer-v2">
-            <div className="section-container">
-                <div className="footer-top">
-                    <div className="footer-brand">
-                        <div className="footer-logo">HFCL</div>
-                        <h2>Over 35 years meeting the world's networking challenges head on</h2>
-
-                        <div className="social-links-area">
-                            <p>Connect with us on Socials</p>
-                            <div className="social-icons">
-                                <a href="#"><Linkedin size={20} /></a>
-                                <a href="#"><Instagram size={20} /></a>
-                                <a href="#"><Facebook size={20} /></a>
-                                <a href="#"><Youtube size={20} /></a>
-                                <a href="#"><Twitter size={20} /></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="footer-links-grid">
-                        <div className="footer-column">
-                            <h4>Products</h4>
-                            <div className="footer-sub-grid">
-                                <div>
-                                    <h5>Fiber optics <ArrowRight size={14} /></h5>
-                                    <a href="#">Optical Fiber Cables</a>
-                                    <a href="#">Optical Fiber</a>
+        <footer className="footer-new">
+            <div className="footer-main">
+                <div className="footer-container">
+                    <div className="footer-grid">
+                        {/* Useful Links Section */}
+                        <div className="footer-section">
+                            <h3>Useful Links</h3>
+                            <div className="useful-links-grid">
+                                <div className="links-col">
+                                    <a href="#">&gt; About us</a>
+                                    <a href="#">&gt; Products</a>
+                                    <a href="#">&gt; Investors</a>
+                                    <a href="#">&gt; E-waste Management</a>
+                                    <a href="#">&gt; Public Notice</a>
                                 </div>
-                                <div>
-                                    <h5>Access <ArrowRight size={14} /></h5>
-                                    <a href="#">Unlicensed Band Backhaul Radios</a>
-                                    <a href="#">WiFi Access Points</a>
-                                    <a href="#">Routers</a>
-                                    <a href="#">Managed Switches</a>
-                                    <a href="#">Antennas</a>
+                                <div className="links-col">
+                                    <a href="#">&gt; News</a>
+                                    <a href="#">&gt; Network Solutions</a>
+                                    <a href="#">&gt; Join Us</a>
+                                    <a href="#">&gt; Privacy Policy</a>
                                 </div>
-                                <div>
-                                    <h5>5G <ArrowRight size={14} /></h5>
-                                    <a href="#">RAN</a>
-                                    <a href="#">Transport</a>
-                                    <a href="#">Last Mile</a>
-                                    <a href="#">5G Lab as a service</a>
-                                    <a href="#">Private 5G Network</a>
-                                    <a href="#">5G Integration Services</a>
-                                </div>
-                                <div>
-                                    <h5>Interconnect Solutions <ArrowRight size={14} /></h5>
-                                    <a href="#">High Density Cabinets</a>
-                                    <a href="#">Joint Closures</a>
-                                    <a href="#">Optical Splitters</a>
-                                    <a href="#">Aerial Cable Accessories</a>
-                                    <a href="#">Fiber Optic Cable Assemblies</a>
-                                    <a href="#">Copper Cable Assemblies</a>
-                                </div>
-                                <div>
-                                    <h5>Defense <ArrowRight size={14} /></h5>
-                                    <a href="#">Electronic Fuzes</a>
-                                    <a href="#">Electro Optics</a>
-                                    <a href="#">Software Defined Radios</a>
-                                    <a href="#">High Capacity Radios</a>
-                                    <a href="#">Ground-Surveillance Radar</a>
-                                </div>
-                            </div>
-                            <a href="#" className="all-products">All products (A-Z) <ArrowRight size={14} /></a>
-                        </div>
-
-                        <div className="footer-column">
-                            <h4>Solutions</h4>
-                            <div className="footer-link-group">
-                                <h5>Telecom providers <ArrowRight size={14} /></h5>
-                                <a href="#">Backhaul Solutions</a>
-                                <a href="#">FTTx Solutions</a>
-                                <a href="#">Access & Aggregation</a>
-                                <a href="#">Last Mile Solutions</a>
-                                <a href="#">Unified Cloud Management</a>
-                            </div>
-                            <div className="footer-link-group">
-                                <h5>Government & Public sector <ArrowRight size={14} /></h5>
-                                <a href="#">Rural Broadband</a>
-                                <a href="#">Railway Communications</a>
-                                <a href="#">Defense Communications</a>
-                            </div>
-                            <div className="footer-link-group">
-                                <h5>Enterprises <ArrowRight size={14} /></h5>
-                                <a href="#">Industry 4.0</a>
-                                <a href="#">Access Network</a>
-                                <a href="#">Datacenter Interconnect</a>
-                                <a href="#">Wireless Connectivity</a>
                             </div>
                         </div>
 
-                        <div className="footer-column">
-                            <h4>Company</h4>
-                            <a href="#">About us <ArrowRight size={14} /></a>
-                            <a href="#">Careers <ArrowRight size={14} /></a>
-                            <a href="#">Investor relations <ArrowRight size={14} /></a>
-                            <div className="misc-links">
-                                <a href="#">Social Responsibility</a>
-                                <a href="#">Events</a>
-                                <a href="#">Partners</a>
-                                <a href="#">Leadership</a>
-                                <a href="#">Contact</a>
+                        {/* Contact Us Section */}
+                        <div className="footer-section">
+                            <h3>Contact Us</h3>
+                            <div className="contact-info">
+                                <p>8, Commercial Complex, Masjid Moth, Greater Kailash-II, New Delhi-110048, India</p>
+                                <p>Email: info@hfcl.com</p>
+                                <p>Tel : +91-11-35209400/9500</p>
+                                <p>Fax : +91-11-35209525</p>
                             </div>
+                            <div className="social-links">
+                                <a href="#" className="social-icon"><Linkedin size={18} /></a>
+                                <a href="#" className="social-icon"><Instagram size={18} /></a>
+                                <a href="#" className="social-icon"><Facebook size={18} /></a>
+                                <a href="#" className="social-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a>
+                                <a href="#" className="social-icon"><Youtube size={18} /></a>
+                            </div>
+                            <div className="linkedin-badge">
+                                <div className="badge-header">
+                                    <Linkedin size={14} fill="white" />
+                                    <span>Follow</span>
+                                </div>
+                                <div className="badge-count">134,136</div>
+                            </div>
+                        </div>
 
-                            <h4 style={{ marginTop: '4rem' }}>Insights</h4>
-                            <a href="#">All Insights <ArrowRight size={14} /></a>
-                            <div className="misc-links">
-                                <a href="#">Blogs</a>
-                                <a href="#">News</a>
-                                <a href="#">Case Studies</a>
-                                <a href="#">White Papers</a>
+                        {/* Find Us Section */}
+                        <div className="footer-section">
+                            <h3>Find Us</h3>
+                            <div className="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6434446654005!2d77.23466107632669!3d28.55044438780718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ad598198f1%3A0x60064f27303f830c!2sHFCL%20Limited!5e0!3m2!1sen!2sin!4v1705330000000!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="180"
+                                    style={{ border: 0, borderRadius: '4px' }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="footer-bottom">
-                    <p>HFCL © 2024 All rights reserved</p>
-                    <div className="legal-links">
-                        <a href="#">E-Waste Management</a>
-                        <a href="#">Public Notice</a>
-                        <a href="#">Privacy policy</a>
-                    </div>
-                </div>
+            </div>
+            <div className="footer-bottom-bar">
+                <p>&copy; Copyright 2024 HFCL - All Rights Reserved</p>
             </div>
         </footer>
     );
