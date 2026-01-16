@@ -64,20 +64,31 @@ const Portfolio = () => {
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
                 >
-                    {items.map((item, i) => (
-                        <motion.div key={i} className="portfolio-card" variants={cardVariants}>
-                            <div className="portfolio-image">
-                                <img src={item.img} alt={item.title} />
-                            </div>
-                            <div className="portfolio-info">
-                                <h3>{item.title}</h3>
-                                <p>{item.desc}</p>
-                                <div className="portfolio-arrow">
-                                    <ArrowRight size={20} />
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                    {items.map((item, i) => {
+                        const hrefs = [
+                            "https://www.hfcl.com/optical-fiber-cable/underground-cables",
+                            "https://www.hfcl.com/passive-networking-components/fiber-optic-cable-assemblies",
+                            "https://www.hfcl.com/passive-networking-components/high-density-cabinets",
+                            "https://www.hfcl.com/passive-networking-components/copper-cable-assemblies"
+                        ];
+
+                        return (
+                            <a key={i} href={hrefs[i]} target="_blank" rel="noopener noreferrer" className="portfolio-card-link">
+                                <motion.div className="portfolio-card" variants={cardVariants}>
+                                    <div className="portfolio-image">
+                                        <img src={item.img} alt={item.title} />
+                                    </div>
+                                    <div className="portfolio-info">
+                                        <h3>{item.title}</h3>
+                                        <p>{item.desc}</p>
+                                        <div className="portfolio-arrow">
+                                            <ArrowRight size={20} />
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </a>
+                        );
+                    })}
                 </motion.div>
                 <a target="_blank" href="https://www.hfcl.com/contact-us" className="btn-orange ordering-guide-btn">
                     Ordering Guide

@@ -16,6 +16,12 @@
     margin-bottom: 4rem;
 }
 
+.portfolio-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .portfolio-card {
     background-color: #F5F4F8;
     display: flex;
@@ -24,11 +30,16 @@
     padding: 10px;
     gap: 1rem;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-color: #f0eff4;
 }
 
 .portfolio-image {
