@@ -76,10 +76,69 @@
 }
 
 .portfolio-arrow {
-    margin-top: auto;
-    color: var(--primary-orange);
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
+
+
+.portfolio-card-link:hover .animate-arrow {
+    transform: translateX(5px);
+}
+
+/* Arrow hover animations */
+.portfolio-card-link .button_arrow {
+    transform: translateX(0px);
+
+    transition: transform 0.4s ease;
+
+}
+
+.portfolio-card-link:hover .button_arrow {
+    transform: translateX(22px);
+
+    transition: transform 0.4s ease;
+
+}
+
+/* Left arrow - slides in from left on hover */
+.portfolio-arrow .button_arrow:nth-of-type(1) {
+    /* transform: translateX(0px); */
+    /* opacity: 0; */
+    transition: all 0.4s ease;
+}
+
+/* Right arrow - moves further right on hover */
+.btn-orange:hover .button_arrow:nth-of-type(1) {
+    transform: translateX(8px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.portfolio-arrow .button_arrow:nth-of-type(2) {
+    /* transform: translateX(10px); */
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.btn-orange:hover .button_arrow:nth-of-type(2) {
+    transform: translateX(0);
+    transform: translateX(20px);
+    opacity: 1;
+}
+
+.animate-arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.btn-orange:hover .animate-arrow {
+    transform: translateX(5px);
+}
+
+
 
 .ordering-guide-btn {
     padding: 1rem 2.5rem;
