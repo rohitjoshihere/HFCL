@@ -82,7 +82,7 @@ button {
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .section-container {

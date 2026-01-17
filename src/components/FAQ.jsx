@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import './FAQ.css';
 import ScrollReveal from './ScrollReveal';
+import WordReveal from './WordReveal';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -48,9 +49,12 @@ const FAQ = () => {
             <div className="section-container">
                 <div className="faq-grid">
                     <div className="faq-left">
-                        <ScrollReveal direction="right">
-                            <h2 className="faq-title">FAQ</h2>
-                        </ScrollReveal>
+                        <WordReveal
+                    text="FAQ"
+                    delay={0.2}
+                    // distance={40}
+                    staggerDelay={0.03}
+                />
                     </div>
                     <div className="faq-right">
                         <ScrollReveal delay={0.2}>

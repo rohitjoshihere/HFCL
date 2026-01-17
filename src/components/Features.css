@@ -46,7 +46,60 @@
     font-weight: 500;
     font-size: 1rem;
 }
-.get-in-touch-btn:hover {
+
+.btn-orange .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.animate-arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.btn-orange:hover .animate-arrow {
+    transform: translateX(5px);
+}
+
+/* Arrow hover animations */
+.btn-orange .button_arrow {
+    transform: translateX(0px);
+
+    transition: transform 0.4s ease;
+
+}
+
+.btn-orange:hover .button_arrow {
+    transform: translateX(22px);
+
+    transition: transform 0.4s ease;
+
+}
+
+/* Left arrow - slides in from left on hover */
+.btn-orange .button_arrow:nth-of-type(1) {
+    /* transform: translateX(0px); */
+    /* opacity: 0; */
+    transition: all 0.4s ease;
+}
+
+/* Right arrow - moves further right on hover */
+.btn-orange:hover .button_arrow:nth-of-type(1) {
+    transform: translateX(8px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.btn-orange .button_arrow:nth-of-type(2) {
+    /* transform: translateX(10px); */
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.btn-orange:hover .button_arrow:nth-of-type(2) {
+    transform: translateX(0);
+    transform: translateX(20px);
+    opacity: 1;
 }
 
 .animate-arrow {

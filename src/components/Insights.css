@@ -70,6 +70,69 @@
    transform: translateX(5px);
 }
 
+.read-more-btn .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.animate-arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .animate-arrow {
+    transform: translateX(5px);
+}
+
+/* Arrow hover animations */
+.read-more-btn .button_arrow {
+    transform: translateX(0px);
+
+    transition: transform 0.4s ease;
+
+}
+
+.read-more-btn:hover .button_arrow {
+    transform: translateX(22px);
+
+    transition: transform 0.4s ease;
+
+}
+
+/* Left arrow - slides in from left on hover */
+.read-more-btn .button_arrow:nth-of-type(1) {
+    /* transform: translateX(0px); */
+    /* opacity: 0; */
+    transition: all 0.4s ease;
+}
+
+/* Right arrow - moves further right on hover */
+.read-more-btn:hover .button_arrow:nth-of-type(1) {
+    transform: translateX(8px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.read-more-btn .button_arrow:nth-of-type(2) {
+    /* transform: translateX(10px); */
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.read-more-btn:hover .button_arrow:nth-of-type(2) {
+    transform: translateX(0);
+    transform: translateX(20px);
+    opacity: 1;
+}
+
+.animate-arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .animate-arrow {
+    transform: translateX(5px);
+}
 
 
 .arrow-circle {

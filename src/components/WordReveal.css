@@ -1,0 +1,16 @@
+.word-reveal-container { 
+    max-width: 800px;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.word-reveal-container span {
+    /* margin-right: 0.2em; */
+   
+}
+
+
+/* .word-reveal-container span:last-child {
+    margin-right: 0;
+} */

@@ -1,5 +1,6 @@
 import React from 'react';
 import './HowItWorks.css';
+import WordReveal from './WordReveal';
 
 const HowItWorks = () => {
     const steps = [
@@ -24,7 +25,12 @@ const HowItWorks = () => {
     return (
         <section className="how-it-works">
             <div className="section-container">
-                <h2 className="how-it-works-title">From Rack to Global Network: How HFCL DCI Works for You</h2>
+                <WordReveal
+                    text="From Rack to Global Network: How HFCL DCI Works for You."
+                    delay={0.2}
+                    // distance={40}
+                    staggerDelay={0.03}
+                />
                 <div className="how-it-works-grid">
                     <div className="steps-grid">
                         {steps.map((step, i) => (
@@ -35,8 +41,8 @@ const HowItWorks = () => {
                         ))}
                     </div>
                     <div className="visual-area">
-                            {/* Image placeholder */}
-                            <img src="/assets/bg2.jpg" alt="DCI Visualization" />
+                        {/* Image placeholder */}
+                        <img src="/assets/bg2.jpg" alt="DCI Visualization" />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Agility.css';
+import WordReveal from './WordReveal';
 
 const Agility = () => {
     const sections = [
@@ -28,7 +29,14 @@ const Agility = () => {
     return (
         <section className="agility">
             <div className="section-container">
-                <h2 className="agility-title">Designed for Hyperscale Agility,<br />From metro to global scale; we build DCI networks that grow with your business.</h2>
+            <WordReveal
+                    text="Designed for Hyperscale Agility, From metro to global scale; we build DCI networks that grow with your business."
+                    delay={0.2}
+                    // distance={40}
+                    staggerDelay={0.03}
+                />
+
+
                 <div className="agility-grid">
                     {sections.map((item, i) => (
                         <div key={i} className="agility-card">

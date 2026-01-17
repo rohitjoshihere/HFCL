@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './Insights.css';
 import ScrollReveal from './ScrollReveal';
+import WordReveal from './WordReveal';
 
 const Insights = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,10 +35,12 @@ const Insights = () => {
     return (
         <section className="insights">
             <div className="section-container">
-                <ScrollReveal>
-                    <h2 className="insights-title">Insights</h2>
-                </ScrollReveal>
-
+                <WordReveal
+                    text="Insights"
+                    delay={0.2}
+                    // distance={40}
+                    staggerDelay={0.03}
+                />
                 <ScrollReveal delay={0.2}>
                     <div className="insights-feature-card">
                         <div className="insights-content">
@@ -45,19 +48,13 @@ const Insights = () => {
                             <p>{currentSlide.description}</p>
                             <button className="read-more-btn">
                                 Read more
-                                <span className='animate-arrow'>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_11392_197)">
-                                            <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#FC5100" />
-                                            <path d="M18.6364 12.6364C18.9879 12.2849 18.9879 11.7151 18.6364 11.3636L12.9088 5.63604C12.5574 5.28457 11.9875 5.28457 11.636 5.63604C11.2846 5.98751 11.2846 6.55736 11.636 6.90883L16.7272 12L11.636 17.0912C11.2846 17.4426 11.2846 18.0125 11.636 18.364C11.9875 18.7154 12.5574 18.7154 12.9088 18.364L18.6364 12.6364ZM6 12V12.9H18V12V11.1H6V12Z" fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_11392_197">
-                                                <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="white" />
-                                            </clipPath>
-                                        </defs>
+                                <div class="icon w-embed">
+                                    <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="button_square" d="M18 4C18 1.79086 19.7909 0 22 0H38C40.2091 0 42 1.79086 42 4V20C42 22.2091 40.2091 24 38 24H22C19.7909 24 18 22.2091 18 20V4Z" fill="#FC5100"></path>
+                                        <path class="button_arrow arrow1" d="M36.6364 12.6364C36.9879 12.2849 36.9879 11.7151 36.6364 11.3636L30.9088 5.63604C30.5574 5.28457 29.9875 5.28457 29.636 5.63604C29.2846 5.98751 29.2846 6.55736 29.636 6.90883L34.7272 12L29.636 17.0912C29.2846 17.4426 29.2846 18.0125 29.636 18.364C29.9875 18.7154 30.5574 18.7154 30.9088 18.364L36.6364 12.6364ZM24 12.9H36V11.1H24V12.9Z" fill="white"></path>
+                                        <path class="button_arrow arrow2" d="M12.6364 12.6364C12.9879 12.2849 12.9879 11.7151 12.6364 11.3636L6.90883 5.63604C6.55736 5.28457 5.98751 5.28457 5.63604 5.63604C5.28457 5.98751 5.28457 6.55736 5.63604 6.90883L10.7272 12L5.63604 17.0912C5.28457 17.4426 5.28457 18.0125 5.63604 18.364C5.98751 18.7154 6.55736 18.7154 6.90883 18.364L12.6364 12.6364ZM0 12.9H12V11.1H0V12.9Z" fill="white"></path>
                                     </svg>
-                                </span>
+                                </div>
                             </button>
                         </div>
 
