@@ -112,7 +112,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 2rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
     z-index: 1000;
     min-width: 800px;
     /* animation: fadeIn 0.3s ease; */

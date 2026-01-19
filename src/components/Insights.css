@@ -59,6 +59,8 @@
 
 .read-more-btn:hover {
     background: rgba(255, 255, 255, 0.2);
+    color: #FC5100;
+    font-weight: 500;
 }
 
 .animate-arrow {

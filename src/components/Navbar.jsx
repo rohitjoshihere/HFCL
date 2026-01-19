@@ -88,10 +88,10 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            Network Solutions
+                            <a target="_blank" href="https://www.hfcl.com/system-integration">Network Solutions</a>
                         </li>
                         <li>
-                            Investors
+                            <a target="_blank" href="https://www.hfcl.com/company-facts">Investors</a>
                         </li>
                         <li 
                             className="dropdown-trigger"
@@ -113,7 +113,7 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            Careers
+                            <a target="_blank" href="https://www.hfcl.com/careers">Careers</a>
                         </li>
                         <li>
                             <a href="https://www.hfcl.com/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a>
