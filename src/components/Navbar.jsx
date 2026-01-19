@@ -17,6 +17,12 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleDropdown = (setter) => {
+        if (window.innerWidth <= 900) {
+            setter(prev => !prev);
+        }
+    };
+
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
@@ -35,6 +41,7 @@ const Navbar = () => {
                             className="dropdown-trigger"
                             onMouseEnter={() => setAboutUsOpen(true)}
                             onMouseLeave={() => setAboutUsOpen(false)}
+                            onClick={() => toggleDropdown(setAboutUsOpen)}
                         >
                             About Us <ChevronDown size={16} />
                             {aboutUsOpen && (
@@ -60,6 +67,7 @@ const Navbar = () => {
                             className="dropdown-trigger"
                             onMouseEnter={() => setProductsOpen(true)}
                             onMouseLeave={() => setProductsOpen(false)}
+                            onClick={() => toggleDropdown(setProductsOpen)}
                         >
                             Products <ChevronDown size={16} />
                             {productsOpen && (
@@ -120,6 +128,7 @@ const Navbar = () => {
                             className="dropdown-trigger"
                             onMouseEnter={() => setInsightsOpen(true)}
                             onMouseLeave={() => setInsightsOpen(false)}
+                            onClick={() => toggleDropdown(setInsightsOpen)}
                         >
                             Insights <ChevronDown size={16} />
                             {insightsOpen && (
@@ -142,6 +151,7 @@ const Navbar = () => {
                             <a href="https://www.hfcl.com/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a>
                         </li>
                     </ul>
+
 
                 </div>
 
