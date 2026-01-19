@@ -94,7 +94,8 @@
     margin-left: 1.5rem;
     color: var(--text-dark);
 }
-.nav-search-icon{
+
+.nav-search-icon {
     display: block;
 }
 
@@ -123,6 +124,7 @@
         opacity: 0;
         transform: translateX(-50%) translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
@@ -216,6 +218,50 @@
 .insights-dropdown ul li:hover a {
     color: var(--primary-orange, #FC5100);
 }
+
+
+.about-dropdown {
+    min-width: 320px;
+    padding: 1.5rem 0;
+    left: 0;
+    transform: none;
+}
+
+.about-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-dropdown ul li {
+    padding: 0.65rem 2rem;
+    justify-content: flex-start;
+}
+
+.about-dropdown ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: inherit;
+}
+
+.about-dropdown ul li.dropdown-title {
+    padding-bottom: 1.25rem;
+}
+
+.about-dropdown ul li.dropdown-title a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #003666;
+    /* Specific dark blue from HFCL brand/image */
+}
+
+.about-dropdown ul li:hover a {
+    color: #003666;
+}
+
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 2rem;
@@ -227,9 +273,10 @@
 }
 
 @media (max-width: 900px) {
-    .nav-search-icon{
+    .nav-search-icon {
         display: none;
     }
+
     .mobile-toggle {
         display: flex;
     }
