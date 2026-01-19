@@ -31,7 +31,7 @@ const Navbar = () => {
 
                     <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
                         <li>
-                            About Us <ChevronDown size={16} />
+                            <a href="https://www.hfcl.com/our-business" target="_blank" rel="noopener noreferrer">About Us</a>
                         </li>
                         <li 
                             className="dropdown-trigger"

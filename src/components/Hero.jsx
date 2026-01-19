@@ -16,12 +16,14 @@ const Hero = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1.8, ease: [0.21, 0.47, 0.32, 0.98] }}
             />
+                <div className='hero-content-main'>
             <ScrollReveal delay={0.4}>
-                <div className="hero-content">
-                    <h1>Empowering the World's<br />Largest Data Centers</h1>
-                    <p>Hyperscale-ready, high-capacity DCI Solutions</p>
-                </div>
+                    <div className="hero-content">
+                        <h1>Empowering the World's<br />Largest Data Centers</h1>
+                        <p>Hyperscale-ready, high-capacity DCI Solutions</p>
+                    </div>
             </ScrollReveal>
+                </div>
         </section>
     );
 };
