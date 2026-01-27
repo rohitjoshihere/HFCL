@@ -21,7 +21,6 @@ const Advantage = () => {
                         <motion.a
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            target="_blank"
                             href="https://www.hfcl.com/contact-us"
                             className="btn-orange"
                         >

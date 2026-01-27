@@ -77,7 +77,7 @@ const Portfolio = () => {
                         ];
 
                         return (
-                            <a key={i} href={hrefs[i]} target="_blank" rel="noopener noreferrer" className="portfolio-card-link">
+                            <a key={i} href={hrefs[i]} rel="noopener noreferrer" className="portfolio-card-link">
                                 <motion.div className="portfolio-card" variants={cardVariants}>
                                     <div className="portfolio-image">
                                         <img src={item.img} alt={item.title} />

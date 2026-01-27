@@ -82,7 +82,7 @@ const Features = () => {
                     ))}
                 </motion.div>
 
-                <a href="https://www.hfcl.com/contact-us" target="_blank" className="btn-orange get-in-touch-btn">
+                <a href="https://www.hfcl.com/contact-us" className="btn-orange get-in-touch-btn">
                     Get in Touch
                     <div data-icon-color="white" class="icon w-embed">
                         <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
