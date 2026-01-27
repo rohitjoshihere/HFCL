@@ -3,11 +3,11 @@ import { Search, ChevronDown, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
-    const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [aboutUsOpen, setAboutUsOpen] = useState(false);
     const [productsOpen, setProductsOpen] = useState(false);
     const [insightsOpen, setInsightsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,25 +39,25 @@ const Navbar = () => {
                     <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
                         <li
                             className="dropdown-trigger"
-                            onMouseEnter={() => setAboutUsOpen(true)}
-                            onMouseLeave={() => setAboutUsOpen(false)}
+                            onMouseEnter={() => window.innerWidth > 900 && setAboutUsOpen(true)}
+                            onMouseLeave={() => window.innerWidth > 900 && setAboutUsOpen(false)}
                             onClick={() => toggleDropdown(setAboutUsOpen)}
                         >
                             About Us <ChevronDown size={16} />
                             {aboutUsOpen && (
-                                <div className="dropdown-menu about-dropdown">
+                                <div className="dropdown-menu about-dropdown" onClick={(e) => e.stopPropagation()}>
                                     <ul>
                                         <li >
-                                            <a href="https://www.hfcl.com/our-business"  rel="noopener noreferrer">Our Businesses</a>
+                                            <a href="https://www.hfcl.com/our-business" rel="noopener noreferrer">Our Businesses</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/operations"  rel="noopener noreferrer">Our Facilities</a>
+                                            <a href="https://www.hfcl.com/operations" rel="noopener noreferrer">Our Facilities</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/management-teams"  rel="noopener noreferrer">Leadership Team</a>
+                                            <a href="https://www.hfcl.com/management-teams" rel="noopener noreferrer">Leadership Team</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/csr"  rel="noopener noreferrer">Corporate Social Responsibility</a>
+                                            <a href="https://www.hfcl.com/csr" rel="noopener noreferrer">Corporate Social Responsibility</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -65,13 +65,13 @@ const Navbar = () => {
                         </li>
                         <li
                             className="dropdown-trigger"
-                            onMouseEnter={() => setProductsOpen(true)}
-                            onMouseLeave={() => setProductsOpen(false)}
+                            onMouseEnter={() => window.innerWidth > 900 && setProductsOpen(true)}
+                            onMouseLeave={() => window.innerWidth > 900 && setProductsOpen(false)}
                             onClick={() => toggleDropdown(setProductsOpen)}
                         >
                             Products <ChevronDown size={16} />
                             {productsOpen && (
-                                <div className="dropdown-menu products-dropdown">
+                                <div className="dropdown-menu products-dropdown" onClick={(e) => e.stopPropagation()}>
                                     <div className="dropdown-column">
                                         <ul>
                                             <h4> <a href="https://www.hfcl.com/ofc-landing">Fiber Optics</a></h4>
@@ -117,20 +117,20 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <a  href="https://www.hfcl.com/system-integration">Network Solutions</a>
+                            <a href="https://www.hfcl.com/system-integration">Network Solutions</a>
                         </li>
                         <li>
-                            <a  href="https://www.hfcl.com/company-facts">Investors</a>
+                            <a href="https://www.hfcl.com/company-facts">Investors</a>
                         </li>
                         <li
                             className="dropdown-trigger"
-                            onMouseEnter={() => setInsightsOpen(true)}
-                            onMouseLeave={() => setInsightsOpen(false)}
+                            onMouseEnter={() => window.innerWidth > 900 && setInsightsOpen(true)}
+                            onMouseLeave={() => window.innerWidth > 900 && setInsightsOpen(false)}
                             onClick={() => toggleDropdown(setInsightsOpen)}
                         >
                             Insights <ChevronDown size={16} />
                             {insightsOpen && (
-                                <div className="dropdown-menu insights-dropdown">
+                                <div className="dropdown-menu insights-dropdown" onClick={(e) => e.stopPropagation()}>
                                     <ul>
                                         <li><a href="https://www.hfcl.com/insights">Case Studies</a></li>
                                         <li><a href="https://www.hfcl.com/news">News & Events</a></li>
@@ -143,10 +143,10 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <a  href="https://www.hfcl.com/careers">Careers</a>
+                            <a href="https://www.hfcl.com/careers">Careers</a>
                         </li>
                         <li>
-                            <a href="https://www.hfcl.com/contact-us"  rel="noopener noreferrer">Contact Us</a>
+                            <a href="https://www.hfcl.com/contact-us" rel="noopener noreferrer">Contact Us</a>
                         </li>
                     </ul>
 
