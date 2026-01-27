@@ -48,13 +48,13 @@ const Footer = () => {
                                 </a>
                                 <a href="https://www.youtube.com/channel/UC7DsrJOOuofW4mfsJf6oEBA" className="social-icon"><Youtube size={18} /></a>
                             </div>
-                            <div className="linkedin-badge" onClick={() => window.open("https://www.linkedin.com/company/hfcl-limited/")}>
+                            <a className="linkedin-badge" href='https://www.linkedin.com/company/hfcl-limited/'>
                                 <div className="badge-header">
                                     <Linkedin size={14} fill="white" />
                                     <span>Follow</span>
                                 </div>
                                 <div className="badge-count">134,136</div>
-                            </div>
+                            </a>
                         </div>
 
                         {/* Find Us Section */}
