@@ -55,7 +55,7 @@ const Insights = () => {
                                         <div className="insights-content">
                                             <h3>{slide.title}</h3>
                                             <p>{slide.description}</p>
-                                            <button className="read-more-btn">
+                                            <button onClick={() => window.open("https://www.hfcl.com/insights", '_blank')} className="read-more-btn">
                                                 Read Case Study
                                                 <div className="icon w-embed">
                                                     <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

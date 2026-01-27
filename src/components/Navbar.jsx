@@ -47,7 +47,7 @@ const Navbar = () => {
                             {aboutUsOpen && (
                                 <div className="dropdown-menu about-dropdown">
                                     <ul>
-                                        <li>
+                                        <li >
                                             <a href="https://www.hfcl.com/our-business" target="_blank" rel="noopener noreferrer">Our Businesses</a>
                                         </li>
                                         <li>
@@ -73,44 +73,42 @@ const Navbar = () => {
                             {productsOpen && (
                                 <div className="dropdown-menu products-dropdown">
                                     <div className="dropdown-column">
-                                        <h4>Fiber Optics</h4>
                                         <ul>
+                                            <h4> <a href="https://www.hfcl.com/ofc-landing">Fiber Optics</a></h4>
                                             <li><a href="https://www.hfcl.com/optical-fiber-cable/underground-cables">Optical Fiber Cables</a></li>
-                                            <li><a href="https://www.hfcl.com/optical-fiber-cable/microduct-cable">Microduct Cable</a></li>
-                                            <li><a href="https://www.hfcl.com/optical-fiber-cable/advisor">Advisor <span className="new-tag">NEW</span></a></li>
-                                            <li><a href="https://www.hfcl.com/optical-fiber-cable">Optical Fiber</a></li>
+                                            <li><a href="https://www.hfcl.com/optical-fiber-cable/microduct-cable">Microduct Cable Advisor<span className="new-tag">NEW</span></a></li>
+                                            <li><a href="https://www.hfcl.com/optical-fiber/flexi-bend">Optical Fiber</a></li>
                                         </ul>
                                     </div>
                                     <div className="dropdown-column">
-                                        <h4>Telecommunication</h4>
                                         <ul>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Unlicensed Band Backhaul</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Radios</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">WiFi Access Points</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Routers</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Managed Switches</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Accessories</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">Network Management Solution</a></li>
-                                            <li><a href="https://www.hfcl.com/telecommunication">5G Product Portfolio</a></li>
+                                            <h4> <a href="https://www.hfcl.com/communicationLanding">Telecommunication</a></h4>
+                                            <li><a href="https://www.hfcl.com/telecommunication/unlicensed-band-backhaul-radios">Unlicensed Band Backhaul Radios</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/wi-fi-access-points">WiFi Access Points</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/routers">Routers</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/managed-switches">Managed Switches</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/antennas">Accessories</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/network-management-solution">Network Management Solution</a></li>
+                                            <li><a href="https://www.hfcl.com/telecommunication/5g-product-portfolio-">5G Product Portfolio</a></li>
                                         </ul>
                                     </div>
                                     <div className="dropdown-column">
-                                        <h4>Defence</h4>
                                         <ul>
-                                            <li><a href="https://www.hfcl.com/defence">Electronic Fuzes</a></li>
-                                            <li><a href="https://www.hfcl.com/defence">Electro Optics</a></li>
-                                            <li><a href="https://www.hfcl.com/defence">High Capacity Radio Relay</a></li>
-                                            <li><a href="https://www.hfcl.com/defence">Software Defined Radios</a></li>
-                                            <li><a href="https://www.hfcl.com/defence">Ground Surveillance Radar</a></li>
+                                            <h4> <a href="https://www.hfcl.com/defence-landing">Defence</a></h4>
+                                            <li><a href="https://www.hfcl.com/defence/electronic-fuzes">Electronic Fuzes</a></li>
+                                            <li><a href="https://www.hfcl.com/defence/electro-optics">Electro Optics</a></li>
+                                            <li><a href="https://www.hfcl.com/defence/high-capacity-radio-relay">High Capacity Radio Relay</a></li>
+                                            <li><a href="https://www.hfcl.com/defence/software-defined-radios">Software Defined Radios</a></li>
+                                            <li><a href="https://www.hfcl.com/defence/ground-surveillance-radar">Ground Surveillance Radar</a></li>
                                         </ul>
                                     </div>
                                     <div className="dropdown-column">
-                                        <h4>Passive Networking Components</h4>
                                         <ul>
+                                            <h4> <a href="https://www.hfcl.com/passive-components-landing">Passive Networking Components</a></h4>
                                             <li><a href="https://www.hfcl.com/passive-networking-components/high-density-cabinets">High Density Cabinets</a></li>
-                                            <li><a href="https://www.hfcl.com/passive-networking-components">Joint Closures</a></li>
-                                            <li><a href="https://www.hfcl.com/passive-networking-components">Optical Splitters</a></li>
-                                            <li><a href="https://www.hfcl.com/passive-networking-components">Aerial Cable Accessories</a></li>
+                                            <li><a href="https://www.hfcl.com/passive-networking-components/joint-closures">Joint Closures</a></li>
+                                            <li><a href="https://www.hfcl.com/passive-networking-components/optical-splitters">Optical Splitters</a></li>
+                                            <li><a href="https://www.hfcl.com/passive-networking-components/aerial-cable-accessories">Aerial Cable Accessories</a></li>
                                             <li><a href="https://www.hfcl.com/passive-networking-components/fiber-optic-cable-assemblies">Fiber Optic Cable Assemblies</a></li>
                                             <li><a href="https://www.hfcl.com/passive-networking-components/copper-cable-assemblies">Copper Cable Assemblies</a></li>
                                         </ul>
@@ -134,12 +132,12 @@ const Navbar = () => {
                             {insightsOpen && (
                                 <div className="dropdown-menu insights-dropdown">
                                     <ul>
-                                        <li><a href="https://www.hfcl.com/insights/case-studies">Case Studies</a></li>
-                                        <li><a href="https://www.hfcl.com/insights/news-events">News & Events</a></li>
-                                        <li><a href="https://www.hfcl.com/insights/newsletters">Newsletters</a></li>
-                                        <li><a href="https://www.hfcl.com/insights/blogs">Blogs</a></li>
-                                        <li><a href="https://www.hfcl.com/insights/white-papers">White Papers</a></li>
-                                        <li><a href="https://www.hfcl.com/insights/webinars">Webinars</a></li>
+                                        <li><a href="https://www.hfcl.com/insights">Case Studies</a></li>
+                                        <li><a href="https://www.hfcl.com/news">News & Events</a></li>
+                                        <li><a href="https://www.hfcl.com/newsletter">Newsletters</a></li>
+                                        <li><a href="https://www.hfcl.com/blog/">Blogs</a></li>
+                                        <li><a href="https://www.hfcl.com/white-papers/">White Papers</a></li>
+                                        <li><a href="https://www.hfcl.com/webinar/">Webinars</a></li>
                                     </ul>
                                 </div>
                             )}

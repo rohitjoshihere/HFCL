@@ -13,17 +13,17 @@ const Footer = () => {
                             <h3>Useful Links</h3>
                             <div className="useful-links-grid">
                                 <div className="links-col">
-                                    <a href="#">&gt; About us</a>
-                                    <a href="#">&gt; Products</a>
-                                    <a href="#">&gt; Investors</a>
-                                    <a href="#">&gt; E-waste Management</a>
-                                    <a href="#">&gt; Public Notice</a>
+                                    <a href="https://www.hfcl.com/our-business">&gt; About us</a>
+                                    <a href="https://www.hfcl.com/ofc-landing">&gt; Products</a>
+                                    <a href="https://www.hfcl.com/company-facts">&gt; Investors</a>
+                                    <a href="https://www.hfcl.com/e-waste-management">&gt; E-waste Management</a>
+                                    <a href="https://www.hfcl.com/wp-content/uploads/2021/02/Public-Notice.pdf">&gt; Public Notice</a>
                                 </div>
                                 <div className="links-col">
-                                    <a href="#">&gt; News</a>
-                                    <a href="#">&gt; Network Solutions</a>
-                                    <a href="#">&gt; Join Us</a>
-                                    <a href="#">&gt; Privacy Policy</a>
+                                    <a href="https://www.hfcl.com/news">&gt; News</a>
+                                    <a href="https://www.hfcl.com/system-integration">&gt; Network Solutions</a>
+                                    <a href="https://www.hfcl.com/careers">&gt; Join Us</a>
+                                    <a href="https://www.hfcl.com/privacy-policy">&gt; Privacy Policy</a>
                                 </div>
                             </div>
                         </div>
@@ -62,13 +62,14 @@ const Footer = () => {
                             <h3>Find Us</h3>
                             <div className="map-container">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6434446654005!2d77.23466107632669!3d28.55044438780718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3ad598198f1%3A0x60064f27303f830c!2sHFCL%20Limited!5e0!3m2!1sen!2sin!4v1705330000000!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.70316721598!2d77.238674!3d28.537693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce22b1257937f%3A0xdd2d0e209fcb353d!2sHFCL%20Corporate%20Office!5e1!3m2!1sen!2sin!4v1769510072182!5m2!1sen!2sin"
                                     width="100%"
-                                    height="180"
-                                    style={{ border: 0, borderRadius: '4px' }}
-                                    allowFullScreen=""
+                                    height="200"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
+                                    title="HFCL Corporate Office Map"
                                 ></iframe>
                             </div>
                         </div>
