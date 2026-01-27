@@ -17,13 +17,15 @@ const Insights = () => {
             title: "U.S. Hyperscale Tech Giant Transforms Expansion with HFCL's Compact IBR Cable.",
             description: "HFCL's 864F IBR Micro Cable increased the network capacity by 2x without new infrastructure. Its compact, efficient design solves space and installation challenges while supporting sustainability goals. The deployment sets a benchmark for high-performance fiber in constrained environment.",
             image: "assets/bg3.jpg",
-            alt: "IBR Cable"
+            alt: "IBR Cable",
+            href: "https://www.hfcl.com/delivering-2x-network-performance"
         },
         {
             title: "Unleashing the Potential: Intermittent Bonded Ribbon Cable Use Cases in Data Centers",
             description: "Intermittently Bonded Ribbon (IBR) cables offer a range of benefits that make them an excellent choice to support such data center infrastructure growth. In this article, we will explore the various use cases of IBR cables in data centers and shed light on their application strengths and deployment best practices.",
             image: "assets/bg4.jpg",
-            alt: "Data center server racks"
+            alt: "Data center server racks",
+            href: "https://www.hfcl.com/blog/intermittentbondedribboncablefordatacentre"
         }
     ];
 
@@ -55,7 +57,7 @@ const Insights = () => {
                                         <div className="insights-content">
                                             <h3>{slide.title}</h3>
                                             <p>{slide.description}</p>
-                                            <button onClick={() => window.open("https://www.hfcl.com/insights", '_blank')} className="read-more-btn">
+                                            <button onClick={() => window.open(slide.href,)} className="read-more-btn">
                                                 Read Case Study
                                                 <div className="icon w-embed">
                                                     <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

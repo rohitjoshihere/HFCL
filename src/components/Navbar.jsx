@@ -48,16 +48,16 @@ const Navbar = () => {
                                 <div className="dropdown-menu about-dropdown">
                                     <ul>
                                         <li >
-                                            <a href="https://www.hfcl.com/our-business" target="_blank" rel="noopener noreferrer">Our Businesses</a>
+                                            <a href="https://www.hfcl.com/our-business"  rel="noopener noreferrer">Our Businesses</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/operations" target="_blank" rel="noopener noreferrer">Our Facilities</a>
+                                            <a href="https://www.hfcl.com/operations"  rel="noopener noreferrer">Our Facilities</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/management-teams" target="_blank" rel="noopener noreferrer">Leadership Team</a>
+                                            <a href="https://www.hfcl.com/management-teams"  rel="noopener noreferrer">Leadership Team</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.hfcl.com/csr" target="_blank" rel="noopener noreferrer">Corporate Social Responsibility</a>
+                                            <a href="https://www.hfcl.com/csr"  rel="noopener noreferrer">Corporate Social Responsibility</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
                                         <ul>
                                             <h4> <a href="https://www.hfcl.com/ofc-landing">Fiber Optics</a></h4>
                                             <li><a href="https://www.hfcl.com/optical-fiber-cable/underground-cables">Optical Fiber Cables</a></li>
-                                            <li><a href="https://www.hfcl.com/optical-fiber-cable/microduct-cable">Microduct Cable Advisor<span className="new-tag">NEW</span></a></li>
+                                            <li><a href="https://www.hfcl.com/MicroCableSelector">Microduct Cable Advisor<span className="new-tag">NEW</span></a></li>
                                             <li><a href="https://www.hfcl.com/optical-fiber/flexi-bend">Optical Fiber</a></li>
                                         </ul>
                                     </div>
@@ -117,10 +117,10 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.hfcl.com/system-integration">Network Solutions</a>
+                            <a  href="https://www.hfcl.com/system-integration">Network Solutions</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.hfcl.com/company-facts">Investors</a>
+                            <a  href="https://www.hfcl.com/company-facts">Investors</a>
                         </li>
                         <li
                             className="dropdown-trigger"
@@ -143,10 +143,10 @@ const Navbar = () => {
                             )}
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.hfcl.com/careers">Careers</a>
+                            <a  href="https://www.hfcl.com/careers">Careers</a>
                         </li>
                         <li>
-                            <a href="https://www.hfcl.com/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                            <a href="https://www.hfcl.com/contact-us"  rel="noopener noreferrer">Contact Us</a>
                         </li>
                     </ul>
 
