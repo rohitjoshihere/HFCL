@@ -58,7 +58,7 @@ const Insights = () => {
                                             <h3>{slide.title}</h3>
                                             <p>{slide.description}</p>
                                             <a href={slide.href} className="read-more-btn">
-                                                Read Case Study
+                                                Read More
                                                 <div className="icon w-embed">
                                                     <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path className="button_square" d="M18 4C18 1.79086 19.7909 0 22 0H38C40.2091 0 42 1.79086 42 4V20C42 22.2091 40.2091 24 38 24H22C19.7909 24 18 22.2091 18 20V4Z" fill="#FC5100"></path>

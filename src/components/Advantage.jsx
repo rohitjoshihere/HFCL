@@ -25,10 +25,6 @@ const Advantage = () => {
                             className="btn-orange"
                         >
                             Schedule a meeting
-                            {/* <span className='animate-arrow'>
-                                <ArrowRight size={18} />
-                            </span> */}
-
                             <div data-icon-color="white" class="icon w-embed">
                                 <svg width="100%" height="100%" viewBox="18 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="button_square" d="M18 4C18 1.79086 19.7909 0 22 0H38C40.2091 0 42 1.79086 42 4V20C42 22.2091 40.2091 24 38 24H22C19.7909 24 18 22.2091 18 20V4Z" fill="white"></path>
