@@ -4,7 +4,6 @@
 }
 
 .faq-section .section-container {
-
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -15,7 +14,7 @@
 }
 
 .faq-left {
-    flex: 0 0 250px;
+    flex: 0 0 400px;
 }
 
 .faq-title {
@@ -23,7 +22,7 @@
     font-weight: 500;
     margin: 0;
     color: #141414;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
 }
 
 .faq-right {
@@ -50,6 +49,10 @@
     align-items: center;
     padding: 40px 0;
     gap: 3rem;
+}
+
+.faq-item:first-child .faq-question {
+    padding-top: 0;
 }
 
 .faq-question h3 {

@@ -40,22 +40,23 @@ const WordReveal = ({
     };
 
     return (
-        <motion.div
+        <motion.h2
             className={`word-reveal-container ${className}`}
             initial="hidden"
             whileInView="visible"
+            style={{ display: 'inline-block' }}
             viewport={{ once: true }}
             variants={containerVariants}
         >
             {words.map((word, index) => (
-                <motion.h2
+                <motion.span
                     key={index}
                     variants={wordVariants}
                 >
                     {word}
-                </motion.h2>
+                </motion.span>
             ))}
-        </motion.div>
+        </motion.h2>
     );
 };
 

@@ -50,11 +50,11 @@ const FAQ = () => {
                 <div className="faq-grid">
                     <div className="faq-left">
                         <WordReveal
-                    text="FAQ"
-                    delay={0.2}
-                    // distance={40}
-                    staggerDelay={0.03}
-                />
+                            text="FAQ"
+                            delay={0.2}
+                            // distance={40}
+                            staggerDelay={0.03}
+                        />
                     </div>
                     <div className="faq-right">
                         <ScrollReveal delay={0.2}>

@@ -1,16 +1,9 @@
 .word-reveal-container { 
-    max-width: 800px;
+    max-width: 900px;
     padding-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: 500;
     line-height: 1.2;
-}
-.word-reveal-container h2 {
-   font-size: 3rem;
-    /* color: var(--text-dark); */
-    font-weight: 500;
-    line-height: 1.2;   
-    display: inline;
 }
 
 
