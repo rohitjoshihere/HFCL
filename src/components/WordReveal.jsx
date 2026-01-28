@@ -48,7 +48,7 @@ const WordReveal = ({
             variants={containerVariants}
         >
             {words.map((word, index) => (
-                <motion.span
+                <motion.div
                     key={index}
                     variants={wordVariants}
                     style={{
@@ -56,7 +56,7 @@ const WordReveal = ({
                     }}
                 >
                     {word}
-                </motion.span>
+                </motion.div>
             ))}
         </motion.div>
     );
