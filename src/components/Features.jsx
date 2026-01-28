@@ -60,7 +60,7 @@ const Features = () => {
         <section className="features">
             <div className="section-container">
                 <WordReveal
-                    text="From edge to core. From India to the world. HFCL keeps your data moving faster, safer, and smarter."
+                    text="From edge to core. From India to the world. HFCL <br/> keeps your data moving faster, safer, and smarter."
                     delay={0.2}
                     // distance={40}
                     staggerDelay={0.03}

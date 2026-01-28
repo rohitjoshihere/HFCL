@@ -10,8 +10,8 @@ const WordReveal = ({
     staggerDelay = 0.1,
     className = ""
 }) => {
-    // Split text into words and preserve spaces
-    const words = text.split(/(\s+)/);
+    // Split text into parts, keeping the <br/> tags
+    const parts = text.split(/(<br\s*\/?>)/gi);
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -40,23 +40,34 @@ const WordReveal = ({
     };
 
     return (
-        <motion.h2
+        <motion.h1
             className={`word-reveal-container ${className}`}
             initial="hidden"
             whileInView="visible"
-            style={{ display: 'inline-block' }}
             viewport={{ once: true }}
             variants={containerVariants}
         >
-            {words.map((word, index) => (
-                <motion.span
-                    key={index}
-                    variants={wordVariants}
-                >
-                    {word}
-                </motion.span>
-            ))}
-        </motion.h2>
+            {parts.map((part, index) => {
+                // If it's a <br/> tag, render a break
+                if (part.toLowerCase().match(/<br\s*\/?>/)) {
+                    return <br key={`br-${index}`} />;
+                }
+
+                // Split the remaining text into words and spaces
+                const words = part.split(/(\s+)/);
+                return words.map((word, wordIndex) => {
+                    if (word === "") return null;
+                    return (
+                        <motion.h2
+                            key={`${index}-${wordIndex}`}
+                            variants={wordVariants}
+                        >
+                            {word}
+                        </motion.h2>
+                    );
+                });
+            })}
+        </motion.h1>
     );
 };
 

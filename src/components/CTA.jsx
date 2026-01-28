@@ -7,8 +7,10 @@ const CTA = () => {
         <section className="cta-section">
             <div className="section-container">
                 <div className="cta-content">
-                    <h2>Upgrade to Hyperscale Connectivity</h2>
-                    <p>Let our experts help you unlock 800G performance with five-nine reliability.</p>
+                    <div className="cta-first">
+                        <h2>Upgrade to Hyperscale Connectivity</h2>
+                        <p>Let our experts help you unlock 800G performance with <br /> five-nine reliability.</p>
+                    </div>
                     <a href="https://www.hfcl.com/contact-us" className="cta-btn cta-btns">
                         <span className="cta-btn-text ">Schedule a meeting</span>
                         <div class="icon w-embed">

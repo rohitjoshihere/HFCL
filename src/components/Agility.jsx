@@ -30,7 +30,7 @@ const Agility = () => {
         <section className="agility">
             <div className="section-container">
             <WordReveal
-                    text="Designed for Hyperscale Agility, From metro to global scale; we build DCI networks that grow with your business."
+                    text="Designed for Hyperscale Agility, <br/> From metro to global scale; we build DCI networks that grow with your business."
                     delay={0.2}
                     // distance={40}
                     staggerDelay={0.03}

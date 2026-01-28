@@ -1,5 +1,5 @@
-.word-reveal-container { 
-    max-width: 900px;
+.word-reveal-container {
+    /* max-width: 900px; */
     padding-bottom: 2rem;
     font-size: 32px;
     font-weight: 500;
@@ -7,6 +7,9 @@
 }
 
 
-/* .word-reveal-container span:last-child {
-    margin-right: 0;
-} */
+.word-reveal-container h2 {
+    display: inline;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}

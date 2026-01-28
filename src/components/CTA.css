@@ -1,5 +1,5 @@
 .cta-section {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
     background: linear-gradient(85.14deg, #F7E4FD 0%, #FFEBD9 100%);
     text-align: left;
 }
@@ -7,7 +7,8 @@
 .cta-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    /* justify-content: center; */
 }
 
 .cta-content h2 {
@@ -15,7 +16,11 @@
     color: var(--text-dark);
     font-weight: 500;
 }
-
+.cta-first{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .cta-content p {
     font-size: 1.25rem;
     color: #666;
