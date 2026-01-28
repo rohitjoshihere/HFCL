@@ -51,9 +51,6 @@ const WordReveal = ({
                 <motion.h2
                     key={index}
                     variants={wordVariants}
-                    style={{
-                        // whiteSpace: word.includes(' ') ? 'pre' : 'normal'
-                    }}
                 >
                     {word}
                 </motion.h2>
